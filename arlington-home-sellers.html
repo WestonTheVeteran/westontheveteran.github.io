@@ -29,10 +29,58 @@
     .hero{background:linear-gradient(115deg,rgba(7,65,35,.94),rgba(7,65,35,.77)),url('arlington-aerial.jpg') center/cover;color:white;padding:95px 0}.eyebrow{color:var(--lime);text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:.85rem}h1{font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.1;max-width:840px;margin:14px 0}h2{font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.2;color:var(--forest)}h3{color:var(--forest);margin-bottom:8px}.hero p{max-width:720px;font-size:1.17rem}.btn{display:inline-block;background:var(--lime);color:#10311d;text-decoration:none;padding:13px 22px;border-radius:6px;font-weight:800;margin-top:16px}.btn:focus-visible,a:focus-visible{outline:3px solid #e2b400;outline-offset:3px}
     section{padding:65px 0}section.alt{background:var(--cream)}.lead{font-size:1.12rem;max-width:800px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border:1px solid #dce8da;border-radius:10px;padding:24px}.alt .card{box-shadow:0 3px 12px rgba(0,0,0,.03)}.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.steps article{padding:20px;border-left:4px solid var(--green);background:#fff}.steps h3{margin-top:0}.note{font-size:.9rem;color:var(--muted)}.contact{background:var(--forest);color:white}.contact h2,.contact a{color:white}.contact .btn{color:#10311d}.contact p{max-width:730px}footer{background:#10271c;color:#fff;padding:28px 0}footer a{color:#e3ffe3}footer .note{color:#d2dfd6}footer p{margin:7px 0}
     @media(max-width:750px){.grid,.steps{grid-template-columns:1fr}.hero{padding:65px 0}header .wrap{align-items:flex-start}nav{gap:12px}}
+
+    /* Shared branding/header dimensions from homepage */
+    header { background:white; border-bottom:1px solid #dce8da; position:sticky; top:0; z-index:10; }
+    header .nav { max-width:1150px; margin:auto; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+    header .brand { display:block; flex-shrink:0; text-decoration:none; }
+    header .weston-logo { display:block; width:300px; max-width:100%; height:auto; }
+    header .broker-brand { flex-shrink:0; }
+    header .broker-brand img { display:block; max-width:190px; height:auto; }
+    header nav { display:flex; flex-wrap:wrap; gap:18px; }
+    header nav a { text-decoration:none; font-weight:600; font-size:.9rem; }
+    .compliance-bar { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:12px 30px; padding:12px 20px; background:#f5f9f3; border-bottom:1px solid #dce8da; text-align:center; }
+    .compliance-bar a { color:#07552b; font-size:14px; font-weight:700; text-decoration:underline; }
+    @media(max-width:760px) { header .weston-logo { width:240px; } header .broker-brand { margin-top:12px; } .compliance-bar { flex-direction:column; gap:8px; } }
   </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="/">WestonTheVeteran</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="#selling-plan">Selling Plan</a><a href="#questions">FAQs</a><a href="#contact">Contact</a></nav></div></header>
+<header>
+  <div class="nav">
+    <a class="brand" href="/">
+  <img
+    src="Untitled%20design%20%281%29.png"
+    alt="WestonTheVeteran Real Estate"
+    class="weston-logo"
+  >
+</a>
+   <div class="broker-brand">
+  <img
+    src="blackwhite_noBG.png"
+    alt="On Demand Realty — Sponsoring Brokerage"
+    width="190"
+    style="max-width:100%;height:auto"
+  >
+</div> 
+    <nav aria-label="Main navigation">
+      <a href="/">Home</a><a href="#selling-plan">Selling Plan</a><a href="#questions">FAQs</a>
+      
+      
+      
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="compliance-bar">
+  <a href="form.pdf" target="_blank" rel="noopener noreferrer">
+    Texas Real Estate Commission Information About Brokerage Services
+  </a>
+
+  <a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5.pdf"
+     target="_blank" rel="noopener noreferrer">
+    Texas Real Estate Commission Consumer Protection Notice
+  </a>
+</div>
 <main>
 <section class="hero"><div class="wrap"><div class="eyebrow">Arlington, Texas • Home Sellers</div><h1>Thinking About Selling Your Home in Arlington?</h1><p>From pricing and preparation to negotiations and closing, get a clear plan tailored to your property and your goals.</p><p><strong>Weston Davis, REALTOR® | On Demand Realty</strong></p><a class="btn" href="mailto:westontheveteran@gmail.com?subject=Arlington%20Home%20Selling%20Consultation">Request a Seller Consultation</a></div></section>
 <section><div class="wrap"><h2>A Local Approach to Your Next Move</h2><p class="lead">Selling a home is about more than putting a sign in the yard. The right approach considers your neighborhood, competing listings, property condition, timing, and what you want to accomplish after closing. I help Arlington homeowners make informed decisions with straightforward communication and a personalized strategy.</p><p>Whether you're moving across DFW, relocating out of Texas, downsizing, or exploring your options, we can start with a conversation—without pressure to list.</p></div></section>
