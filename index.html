@@ -76,6 +76,43 @@
     margin-top:12px;
   }
 }
+ .portrait {
+  padding: 0;
+  overflow: hidden;
+  background: #f5f9f3;
+}
+
+.weston-headshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+    .compliance-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  padding: 12px 20px;
+  background: #f5f9f3;
+  border-bottom: 1px solid #dce8da;
+  text-align: center;
+}
+
+.compliance-bar a {
+  color: #07552b;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .compliance-bar {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
   </style>
 </head>
 <body>
@@ -154,8 +191,12 @@
   <section class="soft" id="about">
     <div class="wrap about">
       <div class="portrait">
-        Your professional headshot will appear here.
-      </div>
+  <img
+    src="Screenshot%202025-11-03%209.38.57%20AM.png"
+    alt="Weston Davis, REALTOR with On Demand Realty"
+    class="weston-headshot"
+  >
+</div>
       <div>
         <div class="eyebrow" style="color:var(--green)">Meet Weston</div>
         <h2>Service Doesn't End When the Uniform Comes Off.</h2>
