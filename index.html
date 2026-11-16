@@ -23,7 +23,26 @@
     .brand { font-size:1.45rem; font-weight:800; color:var(--forest); text-decoration:none; }
     nav { display:flex; flex-wrap:wrap; gap:18px; }
     nav a { text-decoration:none; font-weight:600; font-size:.9rem; }
-    .hero { background:linear-gradient(115deg,rgba(7,85,43,.94),rgba(12,90,47,.8)),linear-gradient(45deg,#3d6e49,#1d3828); color:white; padding:110px 24px; }
+    
+.hero {
+  background:
+    linear-gradient(
+      115deg,
+      rgba(7, 65, 35, 0.88),
+      rgba(7, 65, 35, 0.48)
+    ),
+    url("arlington-aerial.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 110px 24px;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
     .wrap { max-width:1150px; margin:auto; }
     .eyebrow { color:var(--lime); text-transform:uppercase; letter-spacing:3px; font-weight:bold; font-size:.8rem; }
     h1 { font-size:clamp(2.5rem,6vw,4.8rem); line-height:1.08; max-width:850px; margin:18px 0; }
