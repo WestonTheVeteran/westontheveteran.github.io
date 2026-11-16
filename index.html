@@ -198,6 +198,52 @@
     }
     .broker-brand { flex-shrink:0; }
     .hero .seller-cta { display:block; width:fit-content; margin-top:14px; }
+/* Align both logos and center navigation */
+header .nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 12px;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
+
+header .brand {
+  justify-self: start;
+}
+
+header .broker-brand {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+header .nav nav {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  header .nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  header .brand,
+  header .broker-brand {
+    justify-self: center;
+  }
+
+  header .nav nav {
+    grid-column: 1;
+  }
+}
   </style>
 </head>
 <body>
@@ -259,7 +305,7 @@
         <div class="card">
           <h3>Buying a Home</h3>
           <p>Guidance through the home search, financing, negotiations, inspections, and closing process.</p>
-          <a href="#contact">Start your search</a>
+          <a href="/search-for-homes/">Search available homes</a>
         </div>
         <div class="card">
           <h3>Selling Your Home</h3>
