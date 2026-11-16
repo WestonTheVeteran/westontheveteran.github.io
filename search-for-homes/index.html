@@ -2,109 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search DFW Homes | WestonTheVeteran</title>
-  <meta name="description" content="Search North Texas homes for sale with WestonTheVeteran. Explore MLS listings in Arlington and throughout DFW.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search North Texas Homes | WestonTheVeteran | On Demand Realty</title>
+  <meta name="description" content="Search North Texas MLS listings in Arlington, Mansfield, Grand Prairie, Fort Worth and the Dallas-Fort Worth area with Weston Davis, REALTOR® at On Demand Realty.">
+  <link rel="canonical" href="https://www.westontheveteran.com/search-for-homes/">
   <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
-
-    header {
-      background: #15283e;
-      color: white;
-      padding: 22px 6%;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    h1 { margin-bottom: 10px; }
-
-    .intro {
-      text-align: center;
-      padding: 32px 18px;
-    }
-
-    .intro p { line-height: 1.6; }
-
-    .search-container {
-      width: 96%;
-      max-width: 1500px;
-      margin: 0 auto 40px;
-      background: white;
-    }
-
-    iframe {
-      display: block;
-      width: 100%;
-      height: 850px;
-      border: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #15283e;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      iframe { height: 750px; }
+    :root { --forest:#07552b; --green:#2eaa0a; --lime:#65d71b; --cream:#f5f9f3; --ink:#183025; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); line-height:1.6; }
+    a { color:var(--forest); }
+    header { background:white; border-bottom:1px solid #dce8da; position:relative; z-index:10; }
+    .nav { max-width:1150px; margin:auto; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+    .brand { display:block; flex-shrink:0; text-decoration:none; }
+    .weston-logo { display:block; width:300px; max-width:100%; height:auto; }
+    .broker-brand { flex-shrink:0; }
+    .broker-brand img { display:block; max-width:190px; height:auto; }
+    nav { display:flex; flex-wrap:wrap; gap:18px; }
+    nav a { text-decoration:none; font-weight:600; font-size:.9rem; }
+    nav a[aria-current="page"] { color:var(--forest); text-decoration:underline; text-underline-offset:5px; }
+    .compliance-bar { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:12px 30px; padding:12px 20px; background:var(--cream); border-bottom:1px solid #dce8da; text-align:center; }
+    .compliance-bar a { color:var(--forest); font-size:14px; font-weight:700; text-decoration:underline; }
+    .intro { background:var(--cream); padding:42px 24px 32px; text-align:center; }
+    .wrap { max-width:1150px; margin:auto; }
+    .eyebrow { color:var(--green); text-transform:uppercase; letter-spacing:3px; font-weight:bold; font-size:.8rem; }
+    h1 { font-size:clamp(2rem,4vw,3rem); line-height:1.15; color:var(--forest); margin:12px auto; }
+    .intro p { max-width:800px; margin:12px auto; }
+    .search-area { padding:24px 16px 48px; }
+    .search-frame { display:block; width:100%; height:900px; border:1px solid #dce8da; border-radius:6px; background:white; }
+    .help { background:var(--cream); padding:35px 24px; text-align:center; }
+    .btn { display:inline-block; background:var(--lime); color:#103b1e; text-decoration:none; font-weight:800; border-radius:6px; padding:14px 23px; margin-top:10px; }
+    footer { background:#102b1d; color:white; padding:35px 24px; }
+    footer a { color:var(--lime); }
+    .trec-disclosures { font-size:14px; line-height:1.8; margin-top:20px; }
+    .trec-disclosures a { color:var(--lime); text-decoration:underline; font-weight:700; }
+    .small { font-size:.85rem; opacity:.85; }
+    @media(max-width:760px) {
+      .nav { display:block; }
+      .weston-logo { width:240px; }
+      .broker-brand { margin-top:12px; }
+      nav { margin-top:14px; }
+      .compliance-bar { flex-direction:column; gap:8px; }
+      .search-area { padding:12px 6px 30px; }
+      .search-frame { height:850px; }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <nav>
-      <strong>WestonTheVeteran</strong>
-      <a href="/">Home</a>
-    </nav>
+    <div class="nav">
+      <a class="brand" href="/" aria-label="WestonTheVeteran homepage">
+        <img src="/Untitled%20design%20%281%29.png" alt="WestonTheVeteran Real Estate" class="weston-logo">
+      </a>
+      <div class="broker-brand">
+        <img src="/blackwhite_noBG.png" alt="On Demand Realty — Sponsoring Brokerage" width="190">
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="/#services">Services</a>
+        <a href="/#about">Meet Weston</a>
+        <a href="/#heroes">Homes for Heroes</a>
+        <a href="/#communities">Communities</a>
+        <a href="/search-for-homes/" aria-current="page">Search Homes</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
   </header>
-
+  <div class="compliance-bar">
+    <a href="/form.pdf" target="_blank" rel="noopener noreferrer">Texas Real Estate Commission Information About Brokerage Services</a>
+    <a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5.pdf" target="_blank" rel="noopener noreferrer">Texas Real Estate Commission Consumer Protection Notice</a>
+  </div>
   <main>
     <section class="intro">
-      <h1>Search Homes Across North Texas</h1>
-      <p>
-        Explore homes for sale in Arlington, Fort Worth,
-        Dallas, Mansfield, Grand Prairie, and surrounding
-        communities.
-      </p>
+      <div class="wrap">
+        <div class="eyebrow">Arlington, Texas · Dallas–Fort Worth</div>
+        <h1>Search Homes Across North Texas</h1>
+        <p>Explore MLS listings in Arlington, Mansfield, Grand Prairie, Fort Worth, Dallas, and surrounding communities.</p>
+      </div>
     </section>
-
-    <div class="search-container">
-      <iframe
-        src="https://ntrdd.mlsmatrix.com/Matrix/public/IDX.aspx?idx=4b83fba"
-        title="North Texas MLS Home Search"
-        loading="eager"
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
+    <div class="search-area">
+      <iframe class="search-frame" src="https://ntrdd.mlsmatrix.com/Matrix/public/IDX.aspx?idx=4b83fba" title="NTREIS MLS property search" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
+    <section class="help">
+      <div class="wrap">
+        <h2 style="color:var(--forest);margin:0 0 10px">Need Help Finding the Right Home?</h2>
+        <p>I'm Weston Shaw Davis III, REALTOR® with On Demand Realty. Let's talk about your next move in North Texas.</p>
+        <a class="btn" href="mailto:westontheveteran@gmail.com?subject=Help%20with%20my%20home%20search">Connect With Weston</a>
+      </div>
+    </section>
   </main>
-
   <footer>
-    <p>WestonTheVeteran | On Demand Realty</p>
-    <p>Serving those who served; finding homes for Heroes.</p>
-    <p>
-      <a href="/" style="color:white;">Return to Homepage</a>
-    </p>
+    <div class="wrap">
+      <strong>WestonTheVeteran | On Demand Realty</strong>
+      <p>Arlington, Texas · Serving the Dallas–Fort Worth Metroplex</p>
+      <p>Serving those who served; finding homes for Heroes.</p>
+      <div class="trec-disclosures">
+        <p><a href="/form.pdf" target="_blank" rel="noopener noreferrer">Texas Real Estate Commission Information About Brokerage Services</a></p>
+        <p><a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5.pdf" target="_blank" rel="noopener noreferrer">Texas Real Estate Commission Consumer Protection Notice</a></p>
+        <p>Weston Davis, REALTOR® | On Demand Realty</p>
+      </div>
+      <p class="small">© 2026 WestonTheVeteran. All rights reserved.</p>
+    </div>
   </footer>
 </body>
+</html>
