@@ -244,7 +244,22 @@ header .nav nav {
     grid-column: 1;
   }
 }
-  </style>
+  
+.pathways{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:28px}
+.pathway{padding:25px;border:1px solid #dce8da;border-radius:14px;background:white;text-decoration:none;display:block}
+.pathway:hover,.pathway:focus-visible{border-color:var(--green);box-shadow:0 5px 18px #14391b20}
+.pathway h3{color:var(--forest);margin:0 0 8px}.pathway p{margin:0;color:var(--ink)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.hero-actions .btn{margin:0}
+.section-lead{max-width:760px;font-size:1.1rem}
+.feature-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.panel{background:white;border:1px solid #dce8da;border-radius:15px;padding:30px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:25px}
+.contact-options{display:flex;gap:22px;flex-wrap:wrap}
+a:focus-visible{outline:3px solid var(--green);outline-offset:4px}
+@media(max-width:900px){.pathways{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.pathways,.feature-split,.resource-grid{grid-template-columns:1fr}.hero-actions{flex-direction:column}.hero-actions .btn{text-align:center}.hero{min-height:auto;padding:75px 24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <header>
@@ -264,15 +279,7 @@ header .nav nav {
     style="max-width:100%;height:auto"
   >
 </div> 
-    <nav aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#about">Meet Weston</a>
-      <a href="#heroes">Homes for Heroes</a>
-      <a href="#communities">Communities</a>
-<a href="/search-for-homes/">Search Homes</a>
-      <a href="/home-value/">Home Value</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#about">Meet Weston</a><a href="#services">Buy &amp; Sell</a><a href="#heroes">Heroes</a><a href="#communities">Explore DFW</a><a href="#resources">Resources</a><a href="#contact">Contact</a></nav>
   </div>
 </header>
 <div class="compliance-bar">
@@ -286,95 +293,14 @@ header .nav nav {
   </a>
 </div>
 <main>
-  <div class="hero" id="home">
-    <div class="wrap">
-      <div class="eyebrow">Arlington, Texas · Dallas–Fort Worth</div>
-      <h1>Real Estate. Real Relationships. Real Texas.</h1>
-      <p>Helping buyers, sellers, veterans, and relocating families find their place in North Texas.</p>
-      <p><strong>Weston Shaw Davis III · REALTOR® · On Demand Realty</strong></p>
-      <a class="btn" href="#contact">Let's Talk Real Estate</a>
-      <a class="btn outline" href="#heroes">Serving Our Heroes</a>
-      <a class="btn seller-cta" href="/home-value/">Want to Know What Your Home Is Worth?</a>
-    </div>
-  </div>
-
-  <section id="services">
-    <div class="wrap">
-      <div class="eyebrow" style="color:var(--green)">How I Can Help</div>
-      <h2>Your North Texas Real Estate Resource</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Buying a Home</h3>
-          <p>Guidance through the home search, financing, negotiations, inspections, and closing process.</p>
-          <a href="/search-for-homes/">Search available homes</a>
-        </div>
-        <div class="card">
-          <h3>Selling Your Home</h3>
-          <p>A personalized approach to pricing, preparing, marketing, and negotiating your home sale.</p>
-          <a href="/home-value/">Find out what your home is worth</a>
-        </div>
-        <div class="card">
-          <h3>Relocating to DFW</h3>
-          <p>Explore Arlington and surrounding communities with a local real estate resource on your side.</p>
-          <a href="#contact">Plan your move</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="soft" id="about">
-    <div class="wrap about">
-      <div class="portrait">
-  <img
-    src="Screenshot%202025-11-03%209.38.57%20AM.png"
-    alt="Weston Davis, REALTOR with On Demand Realty"
-    class="weston-headshot"
-  >
-</div>
-      <div>
-        <div class="eyebrow" style="color:var(--green)">Meet Weston</div>
-        <h2>Service Doesn't End When the Uniform Comes Off.</h2>
-        <p>I'm Weston Shaw Davis III, a U.S. Navy veteran and REALTOR® with On Demand Realty, serving Arlington and the greater DFW area.</p>
-        <p>My approach is built around relationships, communication, and helping people make confident real estate decisions.</p>
-        <p><strong>Serving those who served; finding homes for Heroes.</strong></p>
-        <a class="btn" href="#contact">Connect With Weston</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="heroes" id="heroes">
-    <div class="wrap">
-      <div class="eyebrow">Homes for Heroes</div>
-      <h2>Helping Those Who Serve Our Communities</h2>
-      <p>I'm proud to be affiliated with Homes for Heroes, supporting eligible military members, veterans, firefighters, law enforcement, healthcare professionals, and teachers.</p>
-      <p>Interested in learning about the Homes for Heroes program? Use my dedicated registration gateway below.</p>
-      <a class="btn" href="https://www.homesforheroes.com/affiliate/weston-davis/" target="_blank" rel="noopener noreferrer">Explore Homes for Heroes</a>
-      <p class="small">Program participation and benefits are subject to Homes for Heroes eligibility and terms.</p>
-    </div>
-  </section>
-
-  <section id="communities">
-    <div class="wrap">
-      <div class="eyebrow" style="color:var(--green)">Rooted in North Texas</div>
-      <h2>Explore Arlington and the DFW Area</h2>
-      <div class="grid">
-        <div class="card"><h3>Arlington</h3><p>Established neighborhoods, local parks, and the Entertainment District.</p></div>
-        <div class="card"><h3>Mansfield & Grand Prairie</h3><p>Explore housing and lifestyle options across neighboring communities.</p></div>
-        <div class="card"><h3>Fort Worth & Beyond</h3><p>Discover the communities that make the greater DFW area home.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <div class="eyebrow" style="color:var(--green)">Let's Connect</div>
-      <h2>Ready for Your Next Move?</h2>
-      <p>Whether you're buying, selling, relocating, or just exploring your options, I'd love to hear from you.</p>
-      <p><strong>Phone:</strong> <a href="tel:+16822657992">682-265-7992</a></p>
-      <p><strong>Email:</strong> <a href="mailto:westontheveteran@gmail.com">westontheveteran@gmail.com</a></p>
-      <a class="btn" href="mailto:westontheveteran@gmail.com?subject=Real%20Estate%20Inquiry">Email Weston</a>
-    </div>
-  </section>
+<div class="hero" id="home"><div class="wrap"><div class="eyebrow">Weston Shaw Davis III · Navy Veteran · REALTOR®</div><h1>Real Estate Is Personal. So Am I.</h1><p>Buying your first home, selling a place full of memories, relocating to North Texas, or simply exploring your options? You'll find clear answers, local insight, and someone in your corner. No pressure. Just a conversation.</p><p><strong>WestonTheVeteran · On Demand Realty</strong></p><div class="hero-actions"><a class="btn" href="#services">Explore Your Options</a><a class="btn outline" href="#about">Get to Know Weston</a></div></div></div>
+<section class="soft" id="services"><div class="wrap"><div class="eyebrow" style="color:var(--green)">Start Here</div><h2>What Brings You Here Today?</h2><p class="section-lead">Whether you're ready to make a move or just gathering information, there's a place for you here.</p><div class="pathways"><a class="pathway" href="/search-for-homes/"><h3>Buy a Home</h3><p>Explore homes and understand your next steps.</p></a><a class="pathway" href="/home-value/"><h3>Sell a Home</h3><p>Learn about your home's value and selling options.</p></a><a class="pathway" href="#heroes"><h3>Heroes &amp; Veterans</h3><p>Find VA and Homes for Heroes resources.</p></a><a class="pathway" href="#communities"><h3>Explore DFW</h3><p>Discover North Texas communities and lifestyles.</p></a></div></div></section>
+<section id="about"><div class="wrap about"><div class="portrait"><img src="Screenshot%202025-11-03%209.38.57%20AM.png" alt="Weston Davis, Navy veteran and REALTOR with On Demand Realty" class="weston-headshot" loading="lazy"></div><div><div class="eyebrow" style="color:var(--green)">Meet Weston</div><h2>Service Doesn't End When the Uniform Comes Off.</h2><p>I'm Weston Shaw Davis III, a U.S. Navy veteran, husband, father, and REALTOR® with On Demand Realty. I believe real estate should begin with listening, not a sales pitch.</p><p>My goal is to help you understand your choices, ask the questions that matter, and move forward when the time is right for you. Whether you're moving across town or across the country, you deserve straightforward guidance and a real person to call.</p><p><strong>Serving those who served; finding homes for Heroes.</strong></p><a class="btn" href="#contact">Have a Conversation</a></div></div></section>
+<section class="soft" id="valuation"><div class="wrap feature-split"><div><div class="eyebrow" style="color:var(--green)">For Homeowners</div><h2>Want to Know What Your Home Is Worth?</h2><p>Whether you're considering selling or simply curious, understanding your home's potential value is a useful place to start.</p><p>No obligation to list your home. Just a way to explore your options.</p><a class="btn" href="/home-value/">Explore Your Home's Value</a></div><div class="panel"><h3>Thinking About Selling?</h3><p>Pricing, preparation, presentation, and timing all matter. I'll help you understand what makes sense for your situation.</p><a href="/arlington-home-sellers.html">Read the seller resource</a></div></div></section>
+<section class="heroes" id="heroes"><div class="wrap"><div class="eyebrow">A Commitment to Service</div><h2>Helping Those Who Serve Our Communities</h2><p class="section-lead">As a Navy veteran, serving others is personal to me. I'm proud to help military families, veterans, teachers, firefighters, law enforcement, and healthcare professionals navigate real estate decisions.</p><p>Explore Homes for Heroes and learn whether you may qualify for program benefits.</p><a class="btn" href="https://www.homesforheroes.com/affiliate/weston-davis/" target="_blank" rel="noopener noreferrer">Explore Homes for Heroes</a><p class="small">Eligibility and benefits are subject to Homes for Heroes program terms.</p></div></section>
+<section id="communities"><div class="wrap"><div class="eyebrow" style="color:var(--green)">Your North Texas Neighbor</div><h2>Find the Community That Feels Like Home</h2><p class="section-lead">From Arlington and Mansfield to Fort Worth, Grand Prairie, Dallas, and beyond, every community has its own personality. Let's find the one that fits your lifestyle.</p><div class="grid"><div class="card"><h3>Arlington</h3><p>Entertainment, established neighborhoods, parks, and a central DFW location.</p></div><div class="card"><h3>Mansfield &amp; Grand Prairie</h3><p>Explore neighborhoods, amenities, and different ways of living in North Texas.</p></div><div class="card"><h3>Fort Worth, Dallas &amp; Beyond</h3><p>Considering a relocation? Start with your priorities, commute, and lifestyle.</p></div></div><p><a href="#contact">Ask Weston about a community</a></p></div></section>
+<section id="resources" class="soft"><div class="wrap"><div class="eyebrow" style="color:var(--green)">Answers Without the Sales Pitch</div><h2>Helpful Resources for Wherever You Are</h2><p class="section-lead">You don't have to be buying or selling today to find something useful here.</p><div class="resource-grid"><div class="card"><h3>Buying Basics</h3><p>Start with the home search and questions about the process.</p><a href="/search-for-homes/">Explore available homes</a></div><div class="card"><h3>Seller Insights</h3><p>Understand values, preparation, and your options.</p><a href="/home-value/">Explore your home's value</a></div><div class="card"><h3>Ask Weston</h3><p>Questions about buying, selling, VA loans, or life in DFW? Reach out.</p><a href="#contact">Ask a question</a></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="eyebrow" style="color:var(--green)">Let's Connect</div><h2>You Don't Have to Be Ready to Move to Reach Out.</h2><p class="section-lead">Have a question? Ask me. Sometimes a conversation is the best place to start. No pressure, no obligation.</p><div class="contact-options"><a href="tel:+16822657992">Call 682-265-7992</a><a href="mailto:westontheveteran@gmail.com?subject=Question%20for%20Weston">Email Weston</a></div></div></section>
 </main>
 
 <footer>
