@@ -36,6 +36,7 @@ const valuationForm = document.getElementById('valuation');
 const submitButton = valuationForm.querySelector('button[type="submit"]');
 const statusMessage = document.createElement('p');
 statusMessage.setAttribute('role', 'status');
+statusMessage.setAttribute('tabindex', '-1');
 statusMessage.setAttribute('aria-live', 'polite');
 statusMessage.className = 'full';
 statusMessage.style.fontWeight = '700';
@@ -88,6 +89,7 @@ valuationForm.addEventListener('submit', async function(event) {
     }
   };
   submitButton.disabled = true;
+  valuationForm.setAttribute('aria-busy', 'true');
   submitButton.textContent = 'Sending your request…';
   statusMessage.textContent = '';
   try {
@@ -100,11 +102,14 @@ valuationForm.addEventListener('submit', async function(event) {
     statusMessage.style.color = '#07552b';
     statusMessage.textContent = 'Thank you! Your home value request has been sent. I will follow up with you soon.';
     valuationForm.reset();
+    statusMessage.focus();
   } catch (error) {
     console.error('Home value request failed', error);
     statusMessage.style.color = '#a12626';
     statusMessage.textContent = 'Your request could not be sent. Please call 682-265-7992 or email westontheveteran@gmail.com.';
+    statusMessage.focus();
   } finally {
+    valuationForm.removeAttribute('aria-busy');
     submitButton.disabled = false;
     submitButton.textContent = 'Request My Home Value Review';
   }
